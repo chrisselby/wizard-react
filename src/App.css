@@ -1,0 +1,114 @@
+body {
+    background: #999;
+    color: #4e4e4e;
+}
+
+/* Wizard styling */
+.wizard-container {
+    background: white;
+    height: 100%;
+    padding: 10px 20px;
+}
+.wizard-container header {
+    padding: 15px 0;
+}
+.wizard-container .btn-default {
+    background: #e4e4e4;
+}
+.wizard-container .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.wizard-container .completed {
+    background-color: #003267;
+    border-color: #003267;
+    color: white;
+}
+.wizard-container header .nav-item {
+    padding-right: 0px;
+    margin-right: 25px;
+}
+.wizard-container header .nav-item:nth-last-child(1) {
+    padding-right: 15px;
+    margin-right: 0px;
+    flex-grow: 1.05;
+}
+.wizard-container header .btn {
+    width: 100%;
+    text-align: left;
+    border-radius: 0px;
+    line-height: 1.4em;
+}
+.wizard-container header .btn-default {
+    color: #717171;
+}
+.wizard-container header .row .nav-item .btn p {
+    margin: 0px;
+}
+.wizard-container header .row .nav-item .btn strong {
+    display: block;
+}
+.wizard-container header .row .nav-item:nth-last-child(1) .btn:after {
+    display: none;
+}
+.wizard-container header .row .nav-item:nth-last-child(1) .btn {
+    width: 100%;
+}
+.wizard-container header .btn:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 29px solid transparent;
+    border-bottom: 29px solid transparent;
+    border-left: 30px solid #003267;
+    position: absolute;
+    top: 0px;
+    left: 100%;
+}
+.wizard-container header .btn-default:after {
+    border-left-color: #e4e4e4;
+}
+.wizard-container header .completed:after {
+    border-left-color: #003267;
+}
+.wizard-container header .btn-primary:after {
+    border-left-color: #007bff;
+}
+.wizard-container header .btn-primary:hover {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.wizard-container header .btn:focus {
+    box-shadow: none;
+}
+.wizard-container .wizard-body {
+    padding: 2.5em;
+    border: 4px solid #007bff;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .wizard-container header {
+        padding: 5px 0;
+    }
+    .wizard-container header .row .nav-item .btn strong {
+        float: right;
+    }
+    .wizard-container header .row .nav-item .btn p {
+        max-width: 80%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .wizard-container header .row .nav-item .btn:after {
+        display: none;
+    }
+    .wizard-container header .row .nav-item {
+        margin: 0px;
+        padding-right: 15px;
+        margin-bottom: 5px;
+    }
+    .wizard-container header .row .nav-item:nth-last-child(1) {
+        margin-bottom: 0px;
+    }
+}
